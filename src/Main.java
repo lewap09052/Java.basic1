@@ -5,9 +5,11 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Wprowadz wartosc x");
         int x = scanner.nextInt();
-        System.out.println("Wprowadz wartosc y");
-        int y = scanner.nextInt();
-        int z = x+y;
-        System.out.println( " Wynik dodawania to:"+z);
+        if (x<3) {
+            System.out.println("x jest mniejsze od 3");
+        }else {
+            System.out.println("x jest wieksze od 3");
+        }
+
     }
 }
